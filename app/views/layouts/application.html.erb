@@ -3,12 +3,53 @@
   <head>
     <title>Contacts</title>
     <%= csrf_meta_tags %>
-
+    <meta name="viewport" content="width=device-width">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
+            <span class="sr-only">ナビゲーション</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="/contacts">Task2
+        </a>
+      </div>
+
+    <div id="gnavi" class="collapse navbar-collapse">
+      <header>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/contacts">トップページ</a></li>
+          <li><a href="/contacts/new">お問い合わせ</a></li>
+        </ul>
+      </header>
+      <section class="main-header">
+        <%= image_tag 'thisheat.jpg',:size => "300x200" %>
+      </section>
+      <section class="about">
+        <h1>About Contact</h1>
+        <p>
+          Contactは、Bootstrapシリーズ課題2で作成するアプリです。<br>
+          Contactを作り終えることで、LOGINシステムシリーズ課題に着手する事ができます。
+        </p>
+      </section>
+    </div>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+
+      <footer>
+        <p>2018 Bootstrap Task2 knittkg</p>
+      </footer>
+
+      </div>
+    </nav>
   </body>
 </html>

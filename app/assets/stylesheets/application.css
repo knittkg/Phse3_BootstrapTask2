@@ -10,6 +10,96 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
+ *= require bootstrap/dist/css/bootstrap.min
  *= require_tree .
  *= require_self
  */
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #fafafa;
+}
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    vertical-align: center;
+}
+.navbar-collapse {
+   padding-right: 0px;
+   padding-left: 0px;
+   background-color: #fafafa;
+}
+.navbar-nav {
+   margin-top: 10px;
+}
+header {
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  background-color: #d2d2d2;
+}
+header ul {
+  margin: 5px 0 0 0 ;
+  list-style: none;
+  float: left;
+}
+header ul a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+header li {
+  float: left;
+  width: auto;
+  margin-right: 15px;
+}
+
+header ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+section {
+  text-align: center;
+  background-color: #fafafa;
+}
+.main-header .about; {
+  background-color: #fafafa;
+  width: 100%;
+}
+
+.container {
+  height: 600px;
+}
+
+footer {
+  background-color: #d2d2d2;
+  color: #727272;
+  width: 100%;
+  padding: 20px 0 10px 0;
+  margin: auto;
+  font-size: 12px;
+  position: fixed;   
+  bottom: 0;
+  text-align: center;
+}
+
